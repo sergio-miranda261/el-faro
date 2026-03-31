@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Faro</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 110px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 10px 0 0;
+            font-size: 48px;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 18px;
+            color: #d6e4f0;
+        }
+
+        nav {
+            background-color: #1b263b;
+            text-align: center;
+            padding: 14px 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #f4c542;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #1b263b;
+            border-left: 6px solid #f4c542;
+            padding-left: 12px;
+        }
+
+        h3 {
+            color: #243b55;
+            margin-top: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        th {
+            background-color: #1b263b;
+            color: white;
+            padding: 12px;
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        .media {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .media-item {
+            flex: 1 1 320px;
+            background-color: #f9fafb;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        video, audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #0d1b2a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px 10px;
+            }
+
+            table, thead, tbody, th, td, tr {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" alt="Logo El Faro">
+        <h1>El Faro</h1>
+        <p>Tu periódico digital de actualidad, deporte y negocios</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#deporte">Deporte</a>
+        <a href="#negocios">Negocios</a>
+    </nav>
+
+    <div class="contenedor">
+
+        <section id="inicio">
+            <h2>Noticias Generales</h2>
+
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Categoría</th>
+                    <th>Texto</th>
+                </tr>
+                <tr>
+                    <td>Nuevo proyecto tecnológico</td>
+                    <td>Tecnología</td>
+                    <td>Se lanza una nueva innovación en el mercado, destacando avances que prometen mejorar la conectividad y la experiencia digital de miles de usuarios.</td>
+                </tr>
+                <tr>
+                    <td>Avances en salud</td>
+                    <td>Salud</td>
+                    <td>Investigadores logran nuevos descubrimientos que podrían aportar al tratamiento de diversas enfermedades y fortalecer la atención preventiva.</td>
+                </tr>
+                <tr>
+                    <td>Cambio climático</td>
+                    <td>Medio ambiente</td>
+                    <td>Se reportan cambios importantes en el clima global, generando llamados a reforzar políticas sostenibles y acciones de protección ambiental.</td>
+                </tr>
+            </table>
+
+            <div class="media">
+                <div class="media-item">
+                    <h3>Video</h3>
+                    <video controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Tu navegador no soporta video.
+                    </video>
+                </div>
+
+                <div class="media-item">
+                    <h3>Audio</h3>
+                    <audio controls>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section id="deporte">
+            <h2>Noticias Deportivas</h2>
+
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Categoría</th>
+                    <th>Texto</th>
+                </tr>
+                <tr>
+                    <td>Equipo gana campeonato</td>
+                    <td>Fútbol</td>
+                    <td>Gran victoria en la final del torneo tras un partido intenso que mantuvo expectantes a los hinchas hasta el último minuto.</td>
+                </tr>
+                <tr>
+                    <td>Nuevo récord olímpico</td>
+                    <td>Atletismo</td>
+                    <td>Una destacada atleta rompe el récord mundial y se consolida como una de las figuras deportivas más importantes del año.</td>
+                </tr>
+                <tr>
+                    <td>Partido histórico</td>
+                    <td>Basket</td>
+                    <td>Un encuentro inolvidable para los fanáticos, marcado por remontadas, gran espectáculo y un cierre emocionante.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="negocios">
+            <h2>Noticias de Negocios</h2>
+
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Categoría</th>
+                    <th>Texto</th>
+                </tr>
+                <tr>
+                    <td>Startup crece rápidamente</td>
+                    <td>Emprendimiento</td>
+                    <td>Una empresa emergente logra expansión internacional gracias a un innovador modelo de negocio y una sólida estrategia digital.</td>
+                </tr>
+                <tr>
+                    <td>Mercado en alza</td>
+                    <td>Economía</td>
+                    <td>Se observa crecimiento en inversiones y un escenario favorable para distintos sectores productivos durante este trimestre.</td>
+                </tr>
+                <tr>
+                    <td>Nuevas oportunidades</td>
+                    <td>Negocios</td>
+                    <td>Se abren nuevas áreas de desarrollo para emprendedores y pequeñas empresas, impulsando la innovación y la competitividad.</td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>El Faro - 2026 | Sitio desarrollado en HTML5</p>
+    </footer>
+
+</body>
+</html>
